@@ -1,0 +1,3 @@
+[submodule "porfolio/html_resume"]
+	path = portfolio/html_resume
+	url = https://github.com/cjjwisniewski/html_resume.git
