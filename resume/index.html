@@ -19,15 +19,15 @@ title: resume
     <div class="profile-name">{{ profile.name }}</div>
     {% if profile.title %}<div class="profile-title"><p>{{ profile.title }}</p></div>{% endif %}
     <div class="profile-info">
-            {% if profile.address %}
-            <p>
-            {% if profile.address.street %}{{ profile.address.street }}, {% endif %}
-            {% if profile.address.city %}{{ profile.address.city }}, {% endif %}
-            {% if profile.address.state %}{{ profile.address.state }} {% endif %}
-            {% if profile.address.zip %}{{ profile.address.zip }}{% endif %}
-            {% if profile.address.country %}{{ profile.address.country }}{% endif %}
-            </p>
-            {% endif %}
+        {% if profile.address %}
+        <p>
+        {% if profile.address.street %}{{ profile.address.street }}{% endif %}
+        {% if profile.address.city %}, {{ profile.address.city }}{% endif %}
+        {% if profile.address.state %}, {{ profile.address.state }}{% endif %}
+        {% if profile.address.zip %} {{ profile.address.zip }}{% endif %}
+        {% if profile.address.country %}, {{ profile.address.country }}{% endif %}
+        </p>
+        {% endif %}
         <ul class="list-pipe">
             {% if profile.linkedin %}<li>{{ profile.linkedin }}</li>{% endif %}
             {% if profile.email %}<li>{{ profile.email }}</li>{% endif %}
@@ -95,8 +95,10 @@ title: resume
                     <p>
                         <a class="skills-section-content-details-category">{{ skills.category }}</a>
                         
-                        {% if skills.items %} | 
-                            <a class="skills-section-content-details-items">{{ skills.items }}</a>
+                        {% if skills.skills %} | <!-- Pipe separates skill category from skills -->
+                            {% for items in skills.skills%}
+                            <a class="skills-section-content-details-items">{{ items.item }}{% if forloop.last != true %},{% endif %}</a>
+                            {% endfor %}
                         {% endif %}
                     </p>
                 </section>
@@ -198,9 +200,11 @@ title: resume
                 <section class="content-section-content interests-section-content-details">
                     <p>
                         <a class="interests-section-content-details-category">{{ interests.category }}</a>
-
-                        {% if interests.items %} | 
-                        <a class="interests-section-content-details-items">{{ interests.items }}</a>
+                        
+                        {% if interests.interests %} | <!-- Pipe separates interest category from interests -->
+                            {% for items in interests.interests%}
+                            <a class="interests-section-content-details-items">{{ items.item }}{% if forloop.last != true %},{% endif %}</a>
+                            {% endfor %}
                         {% endif %}
                     </p>
                 </section>

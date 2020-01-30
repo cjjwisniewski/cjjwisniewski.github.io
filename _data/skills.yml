@@ -1,12 +1,22 @@
 section-title: Technical Summary
 content:
   - category: Automation Technologies
-    items: Powershell, SCCM, Docker, Ansible
+    skills:
+      - item: Powershell
+      - item: SCCM
+      - item: Docker
+      - item: Ansible
   - category: Cloud Technologies
-    items: Microsoft Azure, Google Cloud Platform
+    skills:
+      - item: Microsoft Azure
+      - item: Google Cloud Platform
   - category: Virtualization
-    items: VMWare, Citrix Hypervisor, Microsoft Hyper-V,
+    skills:
+      - item: VMWare
+      - item: Citrix Hypervisor
+      - item: Microsoft Hyper-V
   - category: Enterprise Technologies
-    items: Citrix Virtual Apps and Desktops, ServiceNow, Microsoft Active Directory
-  - category: Operating Systems
-    items: Windows 7/8.1/10, Server 2012/2016/2019, Ubuntu
+    skills:
+      - item: Citrix Cloud
+      - item: ServiceNow
+      - item: Active Directory
