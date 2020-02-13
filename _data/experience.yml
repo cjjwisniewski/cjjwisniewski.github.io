@@ -11,9 +11,9 @@ content:
       transitioned our OSD process away from MDT to SCCM to allow for centralized management of the PC build process and developed a 
       custom OSD front end and various automated components in the process. In addition, I regularly develop tools to assist with 
       the automation of common tasks in our environment and distribute them to the team to improve our overall efficiency. I manage 
-      and maintain our Citrix environment, creating new applications and VMs as needed and maintaining our maintenance machines to 
-      ensure a secure and seamless user experience. My other responsibilities included serving as a point of escalation for various 
-      business critical applications and for tier three support.
+      and maintain our Citrix environment, creating new applications and VMs as needed and working to ensure a secure and seamless 
+      user experience. My other responsibilities included serving as a point of escalation for various business critical applications 
+      and for tier three support.
   - company: Carlow University
     location: Pittsburgh, PA
     title: Computer and Media Specialist
