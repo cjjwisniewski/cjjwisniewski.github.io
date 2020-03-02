@@ -10,7 +10,7 @@ content:
     skills:
       - item: Microsoft Azure
       - item: Google Cloud Platform
-  - category: Virtualization
+  - category: Virtualization Technologies
     skills:
       - item: VMWare
       - item: Citrix Hypervisor
