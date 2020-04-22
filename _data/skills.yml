@@ -9,14 +9,10 @@ content:
   - category: Cloud Technologies
     skills:
       - item: Microsoft Azure
+      - item: Citrix Cloud
       - item: Google Cloud Platform
   - category: Virtualization Technologies
     skills:
       - item: VMWare
-      - item: Citrix Hypervisor
-      - item: Microsoft Hyper-V
-  - category: Enterprise Technologies
-    skills:
-      - item: Citrix Cloud
-      - item: ServiceNow
-      - item: Active Directory
+      - item: XCP-NG
+      - item: Hyper-V
