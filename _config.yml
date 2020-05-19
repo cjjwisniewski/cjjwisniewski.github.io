@@ -26,3 +26,18 @@ twitter_url:
 
 # Build settings
 markdown: kramdown
+
+# Resume settings
+fontawesome_link: https://kit.fontawesome.com/257f475bba.js
+fontawesome_enable_header: true
+fontawesome_enable_content: false
+
+enable_profile: true
+enable_objective: true
+enable_experience: true
+enable_skills: true
+enable_certifications: true
+enable_education: true
+enable_volunteering: true
+enable_interests: true
+enable_references: true
